@@ -1,0 +1,44 @@
+.nav-wrapper{
+    padding: 0 15px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card-action{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-action__link{
+    margin-right: 0 !important;
+    cursor: default;
+}
+
+.search{
+    font-size: 19px !important;
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    top: 3px;
+    right: 12px;
+}
+
+.text{
+    margin: 0px;
+}
+
+.text-inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.margin-left{
+    padding: 0 10px 5px;
+}
