@@ -10,7 +10,7 @@ function Cards({userEnter, userType}) {
     
     async function getRequest() {
         try {
-            const data = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${userEnter}&type=${userType}`)
+            const data = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${userEnter}&type=${userType}`)
             .then(response => response.json());
 
             if (data.Response === 'True'){
@@ -19,7 +19,7 @@ function Cards({userEnter, userType}) {
             } else {
                 setResponse(false)
             }
-        } catch(e) {
+        } catch(error) {
             console.log(error)
         }
     }

@@ -6,7 +6,7 @@ function Plot(props) {
     let [plot, setPlot] = React.useState([]);
 
     React.useEffect(() => {
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${props.id}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${props.id}`)
             .then(response => response.json())
             .then(data => setPlot(data.Plot))
 

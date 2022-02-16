@@ -7,10 +7,10 @@ function Main() {
     let [userEnter, setUserEnter] = React.useState('matrix');
     let [userType, setUserType] = React.useState('');
 
-    return <>
+    return <div className="content">
         <Search userEnterSearch={setUserEnter} userTypeClick={setUserType}/>
         <Cards userEnter={userEnter} userType={userType} />
-    </>
+    </div>
 }   
 
 export default Main;
